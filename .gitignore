@@ -1,0 +1,73 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Resume datasets and processed data
+**/data/raw/
+**/data/processed/
+
+# Model weights
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.gguf
+
+# Model caches
+.cache/
+huggingface_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary files
+tempCodeRunnerFile*
+*.log
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+# Additional model and serialized files
+*.pkl
+*.joblib
+
+# Python coverage
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local test and temporary scripts
+/test.py
+/test_final_matching.py
+/y.py
+/tempCodeRunnerFile.py
+
+# Local Anaconda files
+**/anaconda_projects/
+
+# Generated virtual notebooks
+**/.virtual_documents/
+
+# Resume annotation data
+ResumeIQ/ml_engine/data/evaluation/annotation_batches/
