@@ -294,9 +294,5 @@ ResumeIQ provides estimated career insights and job alignment scores. These scor
 
 
 
-\## 📄 License
 
-
-
-License information will be added when the project license is selected.
 
