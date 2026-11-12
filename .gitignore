@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Resume datasets and generated data
+ml_engine/data/
+ml_engine/.virtual_documents/
+ml_engine/anaconda_projects/
+
+# Trained model artifacts
+# Trained model artifacts and metadata
+ml_engine/trained_model/
