@@ -1,4 +1,7 @@
+
+# ==========================================
 # Python
+# ==========================================
 __pycache__/
 *.py[cod]
 
@@ -7,36 +10,79 @@ __pycache__/
 venv/
 env/
 
-# Secrets
+# ==========================================
+# Environment variables and secrets
+# ==========================================
 .env
 .env.*
 !.env.example
 
+# ==========================================
 # Testing
+# ==========================================
 .pytest_cache/
 .coverage
 htmlcov/
+test.py
+test_*.py
+*_test.py
 
-# IDE
+# Local test and temporary scripts
+/test_final_matching.py
+/y.py
+
+# ==========================================
+# IDE and editors
+# ==========================================
 .vscode/
 .idea/
-
-# Logs
-*.log
-
-# Jupyter
 .ipynb_checkpoints/
+tempCodeRunnerFile*
 
+# ==========================================
+# Operating system
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# Logs and databases
+# ==========================================
+*.log
+*.db
+
+# ==========================================
 # Resume datasets and generated data
+# ==========================================
 ml_engine/data/
 ml_engine/.virtual_documents/
 ml_engine/anaconda_projects/
 
-# Trained model artifacts
-# Trained model artifacts and metadata
+**/data/raw/
+**/data/processed/
+
+ResumeIQ/ml_engine/data/evaluation/annotation_batches/
+
+# ==========================================
+# Model weights and serialized artifacts
+# ==========================================
 ml_engine/trained_model/
-.env
-.venv/
-__pycache__/
-*.py[cod]
-*.db
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.gguf
+*.pkl
+*.joblib
+
+# Model caches
+.cache/
+huggingface_cache/
+
+# ==========================================
+# Build artifacts
+# ==========================================
+build/
+dist/
+*.egg-info/
