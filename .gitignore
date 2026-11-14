@@ -35,3 +35,8 @@ ml_engine/anaconda_projects/
 # Trained model artifacts
 # Trained model artifacts and metadata
 ml_engine/trained_model/
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.db
