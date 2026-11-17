@@ -27,6 +27,10 @@ class Base(DeclarativeBase):
     pass
 
 
+# Import models after Base is defined
+from app.models import user, resume
+
+
 # Database dependency for FastAPI
 def get_db():
     db = SessionLocal()
@@ -35,6 +39,8 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+# Create database tables
 def create_tables():
     Base.metadata.create_all(bind=engine)
-    

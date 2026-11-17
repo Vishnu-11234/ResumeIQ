@@ -86,3 +86,6 @@ huggingface_cache/
 build/
 dist/
 *.egg-info/
+
+# User uploaded resume files
+backend/uploads/
