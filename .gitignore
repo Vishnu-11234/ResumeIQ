@@ -23,11 +23,9 @@ env/
 .pytest_cache/
 .coverage
 htmlcov/
-test.py
-test_*.py
-*_test.py
 
 # Local test and temporary scripts
+/test.py
 /test_final_matching.py
 /y.py
 
@@ -50,6 +48,8 @@ Thumbs.db
 # ==========================================
 *.log
 *.db
+*.sqlite
+*.sqlite3
 
 # ==========================================
 # Resume datasets and generated data
@@ -60,8 +60,6 @@ ml_engine/anaconda_projects/
 
 **/data/raw/
 **/data/processed/
-
-ResumeIQ/ml_engine/data/evaluation/annotation_batches/
 
 # ==========================================
 # Model weights and serialized artifacts
@@ -89,3 +87,4 @@ dist/
 
 # User uploaded resume files
 backend/uploads/
+backend/test_resume.docx
